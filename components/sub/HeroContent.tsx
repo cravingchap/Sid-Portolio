@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { relative } from "path";
 
 const HeroContent = () => {
   return (
@@ -55,16 +56,21 @@ const HeroContent = () => {
           Learn More!
         </motion.a>
       </div>
+      <audio
+         src="/mozart.mp3" 
+       />
+
 
       <motion.div
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/mainIconsdark.svg"
+          src="/SiddharthSingh.png"
           alt="work icons"
-          height={650}
-          width={650}
+          height= {450}
+          width={399}
+          className="top-0 right-0"
         />
       </motion.div>
     </motion.div>
